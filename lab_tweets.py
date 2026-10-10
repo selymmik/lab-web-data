@@ -37,10 +37,10 @@ for phrase in phrases:
     percent[phrase] = counts[phrase] / len(tweets) * 100 
     print(phrase, percent[phrase])
 
-print('| Phrase | Count | Percent |')
-print('|--------|-------|---------|')
+print('| phrase            | percent of tweets |')
+print('| ----------------- | ----------------- |')
 for phrase in phrases:
-    print(f'| {phrase} | {counts[phrase]} | {percent[phrase]:05.2f} |')
+    print(f'| {phrase} | {percent[phrase]:05.2f} |')
 
 fig, ax = plt.subplots()
 
